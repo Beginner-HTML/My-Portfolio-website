@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/303deedb18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header section -->
+    <section id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Anoop.png" alt="logo" class="logo">
+                <ul id="sideMenu">
+                    <li><a class="anime" href="">Home</a></li>
+                    <li><a class="anime" href="#about">About Me</a></li>
+                    <li><a class="anime" href="#service">Services</a></li>
+                    <li><a class="anime" href="#portfolio">Portfolio</a></li>
+                    <li><a class="anime" href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark " onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text anime">
+                <p>Web Developer </p>
+                <h2>Hi, I'm <span>Anoop</span><br>From Chennai</h2>
+            </div>
+            
+        </div>
+    </section>
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/profile bg.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>hello everyone I'm <span class="Anoop">Anoop</span> welcome to my Portfolio website, Here you will find details about me, i hope you find something intersting about me and hire me </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills" >
+                        <ul>
+                            <li> <span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li> <span>Web Development</span><br>Responsive Website</li>
+                            <li> <span>UI/UX</span><br>Designing Website</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li> <span>2018 - 2021</span><br>NAZARETH COLLLEGE OF ARTS AND SCIENCE <br>Bachelor of Commerce - BCom <br>Grade: 72% </Nav></li>
+                            <li> <span>2021 - 2023</span><br>Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science & Technology, Chennai <br>Master of Business Administration - MBA <br>Grade: 76%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li> <span>Executive accounts & ops</span><br><strong style="color: white;">Vedantu · Full-time</strong></li>
+                            <p> Dynamic professional with experience in accounting, operations, and digital marketing. Skilled in advanced Excel, data analysis, and web development (HTML, CSS, JavaScript). I hold an MBA in Digital Marketing & Business Analytics and have completed internships in research analysis and marketing. Passionate about solving problems, managing data, and building innovative solutions."</p>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Services section -->
+    <section id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating Responsive WebPage</p>
+                    <a href="https://www.geeksforgeeks.org/web-design/" >learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Canva Design</h2>
+                    <p>Create Variour Template as per client need</p>
+                    <a href="https://www.canva.com/designschool/tutorials/" >learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Developer</h2>
+                    <p>Creating Website </p>
+                    <a href="" onclick="alert('under progress')">learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                    <!-- my Project -->
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social</h3>
+                        <p>The app connect you to the talented people around the world</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>The app connect you to the talented people around the world</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>online shopping app</h3>
+                        <p>The app connect you to the talented people around the world</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="http://127.0.0.1:3000/youtube project/portfolio website/my work/index.html#" class="btn">See More </a>
+        </div>
+    </section>
+
+    <!-- contact -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                   <h1 class="sub-title">Contact Me</h1>
+                   <p><i class="fa-solid fa-paper-plane"></i> anoopvgopal1999@gmail.com</p>
+                   <p><i class="fa-solid fa-phone"></i> 9445806365</p>
+                   <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-x-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                   </div>
+                   <a href="images/ANOOP_V_GOPAL_.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="E-mail" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Done</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Created By Anoop <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script>
+
+        var tabLinks = document.getElementsByClassName("tab-links");        
+        var tabContents = document.getElementsByClassName("tab-content");
+        
+        function openTab(toggle){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(toggle).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sideMenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
